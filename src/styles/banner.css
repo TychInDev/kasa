@@ -1,0 +1,29 @@
+.banner {
+  height: 223px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner.home {
+  background: url("../../public/banner_home.png");
+  background-blend-mode: darken;
+  background-color: #00000050;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.banner.home h1 {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+
+.banner.about {
+  background-image: url("../../public/banner_about.png");
+}
