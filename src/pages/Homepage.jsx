@@ -10,7 +10,6 @@ function Homepage() {
         <Header />
         <Banner page="home" />
         <Card />
-      <h1>Hello Homepage</h1>
       <Footer />
     </div>
   );

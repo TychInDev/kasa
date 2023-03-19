@@ -1,35 +1,55 @@
-section {
-    background-color: #F7F7F7;
-    margin-top: 2em;
+.logements_cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2em;
+    background-color: #F7F7F7;
     border-radius: 25px;
 }
 
 .logement_card {
-    color: white;
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1em;
-    width: 340px;
-    height: 340px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    background-size: cover;
+    margin: 1em;
+    padding: 1em;
+    color: white;
     background: #ff6060;
+    border-radius: 10px;
 }
 
 .logement_card img {
+    height: 100%;
    border-radius: 10px;
-   height: 80%;
 }
 
 .linkCard {
+    font-weight: 700;
     margin: auto;
     text-decoration: none;
-    font-weight: 700;
 }
+
+.logement_card h3 {
+    height: 15%;
+    font-size: 1.2em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+       .logements_cards {
+        background-color: white;             
+       }
+
+       .logement_card {
+        height: 255px;
+       }
+    }
