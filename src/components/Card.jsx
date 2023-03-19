@@ -7,7 +7,7 @@ function Card() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("./logements.json").then((res) => setData(res.data));
+    axios.get("https://raw.githubusercontent.com/TychInDev/kasa/main/public/logements.json").then((res) => setData(res.data));
   }, []);
 
   return (
