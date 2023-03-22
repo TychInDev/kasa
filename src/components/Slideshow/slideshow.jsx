@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/slideshow.css";
-import LeftArrow from "../../src/assets/arrowleft.png"
-import RightArrow from "../../src/assets/arrowright.png"
+import "./slideshow.css"
+import LeftArrow from "../../../src/assets/images/arrowleft.png";
+import RightArrow from "../../../src/assets/images/arrowright.png";
+
 
 function Slideshow() {
   const [data, setData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    axios.get("../logements.json").then((res) => setData(res.data));
+    axios.get("../assets/logements.json").then((res) => setData(res.data));
   }, []);
 
   const idLogement = window.location.pathname.split("/")[2];
@@ -18,20 +19,17 @@ function Slideshow() {
   const pictureLodgment = logement ? logement.pictures : [];
 
   const handlePrevClick = () => {
-    const lastIndex = pictureLodgment.length - 1;
-    const shouldResetIndex = currentIndex === 0;
-    const index = shouldResetIndex ? lastIndex : currentIndex - 1;
+    const index =
+      currentIndex === 0 ? pictureLodgment.length - 1 : currentIndex - 1;
     setCurrentIndex(index);
   };
 
   const handleNextClick = () => {
-    const lastIndex = pictureLodgment.length - 1;
-    const shouldResetIndex = currentIndex === lastIndex;
-    const index = shouldResetIndex ? 0 : currentIndex + 1;
+    const index = (currentIndex + 1) % pictureLodgment.length;
     setCurrentIndex(index);
   };
 
-  if (pictureLodgment.length === 1 ) {
+  if (pictureLodgment.length === 1) {
     return (
       <div className="slider-logement">
         <img
@@ -48,13 +46,13 @@ function Slideshow() {
       <img
         src={LeftArrow}
         onClick={handlePrevClick}
-        alt="left-arrow"
+        alt="image précédente"
         className="arrow-left"
       />
       <img
         src={RightArrow}
         onClick={handleNextClick}
-        alt="right-arrow"
+        alt="image suivante"
         className="arrow-right"
       />
       {pictureLodgment.map((photo, index) => (

@@ -9,7 +9,7 @@
 }
 
 .banner.home {
-  background: url("../../public/banner_home.png");
+  background: url("../../../public/banner_home.png");
   background-blend-mode: darken;
   background-color: #00000050;
   background-size: cover;
@@ -25,7 +25,7 @@
 }
 
 .banner.about {
-  background-image: url("../../public/banner_about.png");
+  background-image: url("../../../public/banner_about.png");
 }
 
 @media (max-width: 768px) {
@@ -33,10 +33,10 @@
     height: 111px;
     border-radius: 10px;
   }
- 
+
   .banner.home h1 {
     font-size: 24px;
     text-align: center;
     padding-top: 40px;
-   }
+  }
 }

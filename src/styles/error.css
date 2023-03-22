@@ -1,37 +1,37 @@
 .error-title {
-    margin: 0;
-    text-align: center;
-    font-size: 250px;
-    font-weight: bold;
-    color: #FF6060;
+  margin: 0;
+  text-align: center;
+  font-size: 250px;
+  font-weight: bold;
+  color: #ff6060;
 }
 
 .error-message {
-    text-align: center;
-    font-size: 20px;
-    margin: 0;
-    color: #FF6060;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  color: #ff6060;
 }
 
 .error-link {
-    display: flex;
-    justify-content: center;
-    margin-top: 6em;
-    margin-bottom: 2em;
-    font-size: 20px;
-    color: #FF6060;
+  display: flex;
+  justify-content: center;
+  margin-top: 6em;
+  margin-bottom: 2em;
+  font-size: 20px;
+  color: #ff6060;
 }
 
 @media (max-width: 768px) {
-    .error-title {
-        font-size: 150px;
-    }
+  .error-title {
+    font-size: 150px;
+  }
 
-    .error-message {
-        font-size: 16px;
-    }
+  .error-message {
+    font-size: 16px;
+  }
 
-    .error-link {
-        font-size: 16px;
-    }
+  .error-link {
+    font-size: 16px;
+  }
 }

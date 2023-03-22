@@ -1,0 +1,77 @@
+/* LOGEMENT INFO */
+
+#logement_info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .logement_data {
+    color: #ff6060;
+  }
+  
+  .logement_data ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .logement_data li {
+    margin-right: 1em;
+    padding: 0.5em;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .host {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1.25em;
+  }
+  .host span {
+    width: min-content;
+    margin-right: 1em;
+  }
+  
+  .host img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .rating {
+    margin-top: 20%;
+  }
+  
+  @media (max-width: 768px) {
+    #logement_info {
+      display: flex;
+      flex-direction: column;
+      max-width: 90%;
+    }
+  
+    .rating {
+      margin-top: -2.5em;
+    }
+  
+    .logement_data li {
+      width: max-content;
+      margin-right: 1em;
+      padding: 0.5em;
+      font-size: 14px;
+      background-color: #ff6060;
+      color: white;
+      border-radius: 5px;
+    }
+  
+    .logement_data ul {
+      width: 100%;
+    }
+  }
+  
