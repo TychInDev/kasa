@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "../components/Header/header";
-import Footer from "../components/Footer/footer";
-import Banner from "../components/Banner/banner";
-import Card from "../components/Card/card";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
+import Banner from "../components/banner/banner";
+import AvailableHouse from "../components/availablehouse/availablehouse";
 
 function Homepage() {
   return (
     <div>
       <Header />
       <Banner page="home" />
-      <Card />
+      <AvailableHouse />
       <Footer />
     </div>
   );

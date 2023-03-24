@@ -1,4 +1,4 @@
-.photo-logement {
+.photo_lodgment {
   display: flex;
   width: 80%;
   height: 415px;
@@ -7,7 +7,7 @@
   border-radius: 25px;
 }
 
-.arrow-left {
+.arrow_left {
   position: absolute;
   width: 50px;
   left: 12%;
@@ -15,7 +15,7 @@
   transform: translateY(-50%);
 }
 
-.arrow-right {
+.arrow_right {
   position: absolute;
   width: 50px;
   right: 12%;
@@ -23,7 +23,7 @@
   transform: translateY(-50%);
 }
 
-.photo-num {
+.photo_num {
   position: absolute;
   width: fit-content;
   margin: auto;
@@ -39,22 +39,22 @@
 }
 
 @media (max-width: 768px) {
-  .photo-logement {
+  .photo_lodgment {
     width: 90%;
     height: 255px;
   }
 
-  .arrow-left {
+  .arrow_left {
     top: 25%;
     left: 8%;
   }
 
-  .arrow-right {
+  .arrow_right {
     top: 25%;
     right: 8%;
   }
 
-  .photo-num {
+  .photo_num {
     transform: translate(-50%, -110%);
   }
 }

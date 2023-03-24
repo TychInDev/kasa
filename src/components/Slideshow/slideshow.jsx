@@ -1,22 +1,16 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import "./slideshow.css"
 import LeftArrow from "../../../src/assets/images/arrowleft.png";
 import RightArrow from "../../../src/assets/images/arrowright.png";
-
+import lodgmentContent from "../../assets/logements.json"
 
 function Slideshow() {
-  const [data, setData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    axios.get("../assets/logements.json").then((res) => setData(res.data));
-  }, []);
+  const idLodgment = window.location.pathname.split("/")[2];
 
-  const idLogement = window.location.pathname.split("/")[2];
-
-  const logement = data.filter((logement) => logement.id === idLogement)[0];
-  const pictureLodgment = logement ? logement.pictures : [];
+  const lodgment = lodgmentContent.filter((lodgment) => lodgment.id === idLodgment)[0];
+  const pictureLodgment = lodgment ? lodgment.pictures : [];
 
   const handlePrevClick = () => {
     const index =
@@ -31,40 +25,40 @@ function Slideshow() {
 
   if (pictureLodgment.length === 1) {
     return (
-      <div className="slider-logement">
+      <div className="slider_lodgment">
         <img
           src={pictureLodgment[0]}
-          alt="logement"
-          className="photo-logement"
+          alt="lodgment"
+          className="photo_lodgment"
         />
       </div>
     );
   }
 
   return (
-    <div className="slider-logement">
+    <div className="slider_lodgment">
       <img
         src={LeftArrow}
         onClick={handlePrevClick}
         alt="image précédente"
-        className="arrow-left"
+        className="arrow_left"
       />
       <img
         src={RightArrow}
         onClick={handleNextClick}
         alt="image suivante"
-        className="arrow-right"
+        className="arrow_right"
       />
       {pictureLodgment.map((photo, index) => (
         <img
           key={index}
           src={photo}
-          alt="logement"
-          className="photo-logement"
+          alt="lodgment"
+          className="photo_lodgment"
           style={{ display: index === currentIndex ? "block" : "none" }}
         />
       ))}
-      <div className="photo-num">{`${currentIndex + 1}/${
+      <div className="photo_num">{`${currentIndex + 1}/${
         pictureLodgment.length
       }`}</div>
     </div>

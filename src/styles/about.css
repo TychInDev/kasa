@@ -43,13 +43,15 @@
   margin-bottom: 0.5em;
 }
 .about_collapse_content {
-  width: 97%;
+  width: auto;
   background-color: #f7f7f7;
   color: #ff6060;
-  margin-top: 1em;
   padding: 1em;
+  margin-top: -0.7em;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 10px;
+  z-index: -1;
+
 }
 
 @media (max-width: 768px) {

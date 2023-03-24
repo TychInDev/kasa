@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header/header";
-import Footer from "../components/Footer/footer";
-import Banner from "../components/Banner/banner";
-import Collapse from "../components/Collapse/collapse";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
+import Banner from "../components/banner/banner";
+import Collapse from "../components/collapse/collapse";
 import aboutContent from "../assets/aboutContent.json";
 import "../styles/about.css";
 

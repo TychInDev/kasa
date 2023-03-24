@@ -36,6 +36,7 @@
   .host span {
     width: min-content;
     margin-right: 1em;
+    color: #ff6060;
   }
   
   .host img {
