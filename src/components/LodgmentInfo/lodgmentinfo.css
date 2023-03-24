@@ -50,6 +50,10 @@
     margin-top: 20%;
   }
   
+  .rating img {
+    width: 30px;
+    height: 30px;
+  }
   @media (max-width: 768px) {
     #logement_info {
       display: flex;

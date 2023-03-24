@@ -42,14 +42,12 @@ function LodgmentInfo() {
                 key={i}
                 src={fullStar}
                 alt="star"
-                style={{ width: "30px", height: "30px" }}
               />
             ) : (
               <img
                 key={i}
                 src={emptyStar}
                 alt="empty star"
-                style={{ width: "30px", height: "30px" }}
               />
             );
           })}
