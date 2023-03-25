@@ -11,25 +11,15 @@ function Collapse(props) {
 
   return (
     <div
-      className={
-        props.page === "about"
-          ? "about_collapse_section"
-          : "lodgment_collapse_section"
-      }
+      className={`${props.page}_collapse_section`}
     >
       {props.sections.map((section, index) => (
         <div
           key={index}
-          className={
-            props.page === "about" ? "about_collapse" : "lodgment_collapse"
-          }
+          className={`${props.page}_collapse`}
         >
           <div
-            className={
-              props.page === "about"
-                ? "about_collapse_header"
-                : "lodgment_collapse_header"
-            }
+            className={`${props.page}_collapse_header`}
           >
             <p>{section.title}</p>
             <img
@@ -40,13 +30,10 @@ function Collapse(props) {
             />
           </div>
           {index === activeIndex &&
-            (props.page === "about" || props.page === "lodgment") && (
+            `${props.page}_collapse_content` &&
+            (
               <div
-                className={
-                  props.page === "about"
-                    ? "about_collapse_content"
-                    : "lodgment_collapse_content"
-                }
+                className={`${props.page}_collapse_content`}
               >
                 <p>{section.content}</p>
               </div>
