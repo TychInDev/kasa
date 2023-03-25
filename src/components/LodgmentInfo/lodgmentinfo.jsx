@@ -38,17 +38,9 @@ function LodgmentInfo() {
         <div className="rating">
           {[...Array(5)].map((_, i) => {
             return i < logementRating ? (
-              <img
-                key={i}
-                src={fullStar}
-                alt="star"
-              />
+              <img key={i} src={fullStar} alt="star" />
             ) : (
-              <img
-                key={i}
-                src={emptyStar}
-                alt="empty star"
-              />
+              <img key={i} src={emptyStar} alt="empty star" />
             );
           })}
         </div>
@@ -57,4 +49,4 @@ function LodgmentInfo() {
   );
 }
 
-export default LodgmentInfo
+export default LodgmentInfo;

@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
-import "./slideshow.css"
+import React, { useState } from "react";
+import "./slideshow.css";
 import LeftArrow from "../../../src/assets/images/arrowleft.png";
 import RightArrow from "../../../src/assets/images/arrowright.png";
-import lodgmentContent from "../../assets/logements.json"
+import lodgmentContent from "../../assets/logements.json";
 
 function Slideshow() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const idLodgment = window.location.pathname.split("/")[2];
 
-  const lodgment = lodgmentContent.filter((lodgment) => lodgment.id === idLodgment)[0];
+  const lodgment = lodgmentContent.filter(
+    (lodgment) => lodgment.id === idLodgment
+  )[0];
   const pictureLodgment = lodgment ? lodgment.pictures : [];
 
   const handlePrevClick = () => {
