@@ -1,0 +1,42 @@
+.banner {
+  height: 223px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.banner.home {
+  background: url("../../../public/banner_home.png");
+  background-blend-mode: darken;
+  background-color: #00000050;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.banner.home h1 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  padding-top: 80px;
+}
+
+.banner.about {
+  background-image: url("../../../public/banner_about.png");
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+  }
+
+  .banner.home h1 {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
