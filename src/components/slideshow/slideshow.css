@@ -9,17 +9,19 @@
 
 .arrow_left {
   position: absolute;
-  width: 50px;
+  width: 30px;
+  height: 60px;
   left: 12%;
-  top: 40%;
+  top: 42%;
   transform: translateY(-50%);
 }
 
 .arrow_right {
   position: absolute;
-  width: 50px;
+  width: 30px;
+  height: 60px;
   right: 12%;
-  top: 40%;
+  top: 42%;
   transform: translateY(-50%);
 }
 
@@ -45,12 +47,12 @@
   }
 
   .arrow_left {
-    top: 25%;
+    top: 28%;
     left: 8%;
   }
 
   .arrow_right {
-    top: 25%;
+    top: 28%;
     right: 8%;
   }
 
