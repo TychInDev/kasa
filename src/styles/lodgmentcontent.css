@@ -69,6 +69,18 @@
   margin-right: 1em;
 }
 
+.lodgment_collapse_list {
+  width: auto;
+  height: fit-content;
+  margin-top: -0.5em;
+  padding: 2em;
+  font-size: 18px;
+  background-color: #f7f7f7;
+  color: #ff6060;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
 @media (max-width: 768px) {
   .lodgment_more_info {
     display: flex;

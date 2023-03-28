@@ -28,17 +28,8 @@ function Lodgment() {
 
   const lodgementEquipments = [
     {
-      title: "Équipements",
-      content: (
-        <div>
-          {lodgment.equipments &&
-            lodgment.equipments.map((equipment, index) => (
-              <p key={index} className="equipment_list">
-                {equipment}
-              </p>
-            ))}
-        </div>
-      ),
+      title: "Equipements",
+      content: lodgment.equipments,
     },
   ];
 

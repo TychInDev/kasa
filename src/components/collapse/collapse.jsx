@@ -10,17 +10,10 @@ function Collapse(props) {
   }
 
   return (
-    <div
-      className={`${props.page}_collapse_section`}
-    >
+    <div className={`${props.page}_collapse_section`}>
       {props.sections.map((section, index) => (
-        <div
-          key={index}
-          className={`${props.page}_collapse`}
-        >
-          <div
-            className={`${props.page}_collapse_header`}
-          >
+        <div key={index} className={`${props.page}_collapse`}>
+          <div className={`${props.page}_collapse_header`}>
             <p>{section.title}</p>
             <img
               src={index === activeIndex ? ArrowUp : ArrowDown}
@@ -31,22 +24,17 @@ function Collapse(props) {
           </div>
           {index === activeIndex &&
             `${props.page}_collapse_content` &&
-            (
-              <div
-                className={`${props.page}_collapse_content`}
-              >
+            (typeof section.content === "string" ? (
+              <div className={`${props.page}_collapse_content`}>
                 <p>{section.content}</p>
               </div>
-            )}
-          {index === activeIndex &&
-            props.page === "lodgment" &&
-            section.type === "equipments" && (
+            ) : Array.isArray(section.content) ? (
               <ul className="lodgment_collapse_list">
                 {section.content.map((equipment, index) => (
                   <li key={index}>{equipment}</li>
                 ))}
               </ul>
-            )}
+            ) : null)}
         </div>
       ))}
     </div>

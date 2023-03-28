@@ -22,6 +22,7 @@
   margin-bottom: auto;
   margin-left: auto;
   margin-right: 0.5em;
+  cursor: pointer;
 }
 
 .about_collapse_header {
@@ -51,7 +52,6 @@
   font-size: 18px;
   border-radius: 10px;
   z-index: -1;
-
 }
 
 @media (max-width: 768px) {
