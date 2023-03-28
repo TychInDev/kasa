@@ -42,13 +42,13 @@ function Slideshow() {
       <img
         src={LeftArrow}
         onClick={handlePrevClick}
-        alt="image précédente"
+        alt="précédente"
         className="arrow_left"
       />
       <img
         src={RightArrow}
         onClick={handleNextClick}
-        alt="image suivante"
+        alt="suivante"
         className="arrow_right"
       />
       {pictureLodgment.map((photo, index) => (
