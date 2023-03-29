@@ -22,7 +22,7 @@ nav li {
 }
 
 nav a {
-  font-size: 24px;
+  font-size: 22px;
   color: #ff6060;
   text-decoration: none;
 }
@@ -53,5 +53,23 @@ nav a.active {
     margin-left: 1em;
     margin-right: 1em;
     font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1268px) {
+
+  header img {
+    width: 30%;
+    margin-left: 1em;
+  }
+
+  nav ul {
+   width: 70%;
+  }
+
+  nav ul a {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 16px;
   }
 }
