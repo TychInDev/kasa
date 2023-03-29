@@ -54,7 +54,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1268px) {
-  .lodgments_cards {
+   .lodgments_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -65,7 +65,7 @@
     margin-bottom: 2em;
     background-color: #f7f7f7;
     border-radius: 25px;
-  }
+  } 
 
   .lodgment_card {
     height: 255px;
